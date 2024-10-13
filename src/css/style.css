@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  margin: 20px;
+  margin: 100px;
   width: 450px; 
   height: 780px; 
   border: 2px solid black;  
@@ -45,7 +45,8 @@ body {
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  width: 400px;
+  margin: 5px;
+  width: 380px;
   height: 250px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
