@@ -23,6 +23,7 @@ body {
 
 .container {
   margin: 100px;
+  padding: 10px;
   width: 450px; 
   height: 780px; 
   border: 2px solid black;  
