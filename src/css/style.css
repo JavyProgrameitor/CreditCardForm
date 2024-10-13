@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(106, 106, 158, 0.521), rgb(46, 49, 58));
+}
+
+.return-button {
+  position: absolute;
+  left: 40px; 
+  top: 40px; 
+  transform: translateY(-50%); 
+}
+
+.container {
+  margin: 20px;
+  width: 450px; 
+  height: 780px; 
+  border: 2px solid black;  
+  border-radius: 20px;
+  background: linear-gradient(to bottom, rgba(106, 106, 158, 0.521), rgb(26, 25, 25));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+#display-tarjet-name {
+
+  font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif; 
+  font-size: 40px;
+  font-weight: bolder;
+
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  width: 400px;
+  height: 250px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back {
+  background-color: rgb(111, 127, 143);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameTarjet {
+  font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif; 
+  font-size: 55px;
+  font-weight: bold;
+  color: white;
+}
+
+.nameUser {
+  display: flex;
+  font-family: 'Dancing Script', cursive; 
+  font-size: 40px;
+  color: white;
+}
+
+.expires {
+  display: flex;
+  font-family: 'Dancing Script', cursive; 
+  font-size: 20px;
+  color: white;
+
+}
+
+.display-number {
+  font-family: 'Dancing Script', cursive; 
+  font-size: 20px;
+  color: white;
+
+}
+
+.displayCVC {
+
+  font-family: 'Dancing Script', cursive; 
+  font-size: 20px;
+  color: white;
+
+}
+
+.card-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-form label {
+  width: 90%;
+  font-family: 'Dancing Script', cursive; 
+      font-size: 25px;
+      margin: 10px 0 5px;
+      color: #f7e9e9;
+}
+
+.input-field {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.form-button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, rgba(25, 223, 180, 0.829), rgb(2, 3, 65));
+  font-family: 'Dancing Script', cursive; 
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+.error {
+  font-family: 'Dancing Script', cursive; 
+  color: rgb(158, 18, 18);
+  font-size: 20px; 
+  margin-top: 5px;
+}
+
+.return-button {
+
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, rgba(25, 223, 180, 0.829), rgb(2, 3, 65));
+  font-family: 'Dancing Script', cursive; 
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  cursor: pointer
+}
+
+.return-button:hover {
+  background-color: #0056b3;
+}

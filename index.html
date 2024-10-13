@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content=width=device-width, initial-scale=1.0>
+  <script type=module src=./src/js/index.js defer></script>
+  <link rel=stylesheet href=./src/css/style.css>
+  <link rel=icon type=image/png href=https://img.icons8.com/color/48/000000/javascript.png>
+
+  <title>Card Form</title>
+</head>
+
+<body>
+  <button id="returnButton" class="return-button">Portfolio</button>
+
+  <div class="container">
+    <div class="flip-card">
+      <div class="flip-card-inner" >
+        <div class="flip-card-front" id="flip-card-front">
+          <div id="cardImg"></div>
+          <p  class="display-tarjet-name" id="display-tarjet-name"> You Credit Card</p>
+          <p id="display-number"></p>
+          <p id="display-name"></p>
+          <p id="display-date"></p>
+        </div>
+        <div class="flip-card-back" id="flip-card-back"> 
+          <div id="cardImgBack"></div>     
+          <p id="display-cvc"></p>
+        </div>
+      </div>
+    </div>
+
+    <form class="card-form">
+      <label for="number-card">Card number</label>
+      <input type="text" id="number-card" class="input-field">
+      <span class="error" id="number-card-error"></span>
+
+      <label for="username">Full name</label>
+      <input type="text" id="username" class="input-field">
+      <span class="error" id="username-error"></span>
+
+      <label for="date">Expiries of date (MM/AA)</label>
+      <input type="text" id="date" class="input-field" placeholder="MM/AA">
+      <span class="error" id="date-error"></span>
+
+      <label for="CVC">CVC</label>
+      <input type="text" id="CVC" class="input-field">
+      <span class="error" id="cvc-error"></span>
+
+      <div class="button-group">
+        <button type="reset" id="reset" class="form-button">Reset</button>
+        <button type="submit" id="submit" class="form-button">Pay</button>
+      </div>
+
+  </div>
+
+</body>
+
+</html>
